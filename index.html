@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+    </style>
+    <script src="js/phaser.min.js"></script>
+    <!--<script src="https://sdk.crazygames.com/crazygames-sdk-v1.js"></script>-->
+    <script src="bundle.js"></script>
+</head>
+
+<body>
+    <!--<script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>-->
+    <!--<script src="js/preLoader.js"></script>
+    <script src="js/ScenePokiMenu.js"></script>-->
+    <script src="js/Player.js"></script>
+    <script src="js/SceneStadium.js"></script>
+    <script src="js/ScenePlaybook.js"></script>
+    <script src="js/SceneTimeMenu.js"></script>
+    <script src="js/SceneMainMenu.js"></script>
+    <script src="js/SceneDifficultyMenu.js"></script>
+    <script src="js/SceneGameModeMenu.js"></script>
+    <script src="js/SceneTeamSelect.js"></script>
+    <script src="js/SceneTeamSelect2.js"></script>
+    <script src="js/ScenePlayoffTeamSelect.js"></script>
+    <script src="js/ScenePlayoffBracket.js"></script>
+    <script src="js/SceneGameOver.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+<div id="moreg" style="position:fixed; bottom: 0; left: 10%; z-index: 10">
+<iframe  frameborder="0" style="cursor:pointer; height: 100px; width: 110px" src="https://www.play-more-games.com/links.html" alt="More Games"></iframe></a></div>
+</body>
+  <script>
+            window.SDK_OPTIONS = {
+            gameId: "jz6f6p7mu5yged8gbk2ymkb4jgwgvlkp",
+            onEvent: function(a) {
+                switch (a.name) {
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        break;
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        break;
+                    case "SDK_READY":
+                        // when sdk is ready
+                        break;
+                }
+            }
+        };
+        (function(a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+        })(document, "script", "gamemonetize-sdk");
+
+    function google_analytics() {
+        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+            sdk.showBanner();
+        }
+    };
+
+    function google_analytics_ID() {
+        if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') {
+            sdk.showBanner();
+        }
+    };
+    setTimeout(function() {
+        google_analytics();
+    }, 1000);
+    
+</script>
+</html>
